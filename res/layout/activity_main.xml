@@ -8,9 +8,71 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.vip.syreadhd.MainActivity" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+    <ImageView
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg"
+        />
+    
+        <ImageView 
+        android:id="@+id/img_rainbow"
+        android:layout_alignParentTop="true"
+           android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/rainbow"
+        />
 
+            <ImageView 
+        android:id="@+id/img_star"
+        android:layout_alignParentTop="true"
+           android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/star"
+        />
+        
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp" 
+        android:src="@drawable/cloud_one"
+        />
+    
+      <ImageView
+        android:layout_marginTop="150dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp" 
+        android:src="@drawable/cloud_two"
+        />
+      
+        <ImageView
+        android:layout_marginTop="150dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="30dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp" 
+        android:src="@drawable/cloud_three"
+        />
+        
+         <ImageView
+        android:layout_marginTop="180dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="60dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp" 
+        android:src="@drawable/cloud_four"
+        />
+         
+         <ImageView
+       android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true"
+       android:layout_marginBottom="30dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp" 
+        android:src="@drawable/cloud_five"
+        />
+   
 </RelativeLayout>
