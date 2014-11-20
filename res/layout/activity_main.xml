@@ -34,45 +34,95 @@
         />
         
     <ImageView
+        android:id="@+id/img_cloud_one"
         android:layout_marginTop="100dp"
+          android:scaleType="fitXY"
         android:layout_marginLeft="30dp"
-        android:layout_width="100dp"
-        android:layout_height="60dp" 
+        android:layout_width="120dp"
+        android:layout_height="80dp" 
         android:src="@drawable/cloud_one"
         />
-    
-      <ImageView
+
+    <ImageView
+         android:id="@+id/img_cloud_two"
         android:layout_marginTop="150dp"
-        android:layout_width="100dp"
-        android:layout_height="60dp" 
+          android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_height="80dp" 
         android:src="@drawable/cloud_two"
         />
       
         <ImageView
+            android:id="@+id/img_cloud_three"
         android:layout_marginTop="150dp"
+          android:scaleType="fitXY"
        android:layout_alignParentRight="true"
        android:layout_marginRight="30dp"
-        android:layout_width="100dp"
-        android:layout_height="60dp" 
+        android:layout_width="120dp"
+        android:layout_height="80dp" 
         android:src="@drawable/cloud_three"
         />
         
          <ImageView
+             android:id="@+id/img_cloud_four"
         android:layout_marginTop="180dp"
+          android:scaleType="fitXY"
        android:layout_alignParentRight="true"
        android:layout_marginRight="60dp"
-        android:layout_width="100dp"
-        android:layout_height="60dp" 
+        android:layout_width="120dp"
+        android:layout_height="80dp" 
         android:src="@drawable/cloud_four"
         />
          
          <ImageView
+             android:id="@+id/img_cloud_five"
        android:layout_centerHorizontal="true"
     android:layout_alignParentBottom="true"
        android:layout_marginBottom="30dp"
-        android:layout_width="100dp"
-        android:layout_height="60dp" 
+       android:scaleType="fitXY"
+        android:layout_width="120dp"
+        android:layout_height="80dp" 
         android:src="@drawable/cloud_five"
         />
+         
+           <ImageView 
+                android:id="@+id/img_select_btn"
+         android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignRight="@id/img_cloud_one"
+        android:layout_alignBottom="@id/img_cloud_one"
+        android:src="@drawable/select"/>
+           
+             <ImageView 
+                   android:id="@+id/img_resource_btn"
+         android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignRight="@id/img_cloud_three"
+        android:layout_alignBottom="@id/img_cloud_three"
+        android:src="@drawable/resource"/>
+             
+               <ImageView 
+                   android:id="@+id/img_read_btn"
+         android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignRight="@id/img_cloud_two"
+        android:layout_alignBottom="@id/img_cloud_two"
+        android:src="@drawable/read"/>
+               
+                 <ImageView 
+                     android:id="@+id/img_manage_btn"
+         android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignRight="@id/img_cloud_four"
+        android:layout_alignBottom="@id/img_cloud_four"
+        android:src="@drawable/manage"/>
+                 
+                   <ImageView 
+                       android:id="@+id/img_alounce_btn"
+         android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignRight="@id/img_cloud_five"
+        android:layout_alignBottom="@id/img_cloud_five"
+        android:src="@drawable/alounce"/>
    
 </RelativeLayout>
