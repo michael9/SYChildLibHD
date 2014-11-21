@@ -10,18 +10,24 @@ package com.vip.syreadhd;
 public final class R {
     public static final class anim {
         public static final int alounce_btn=0x7f040000;
-        public static final int cloud_five=0x7f040001;
-        public static final int cloud_four=0x7f040002;
-        public static final int cloud_one=0x7f040003;
-        public static final int cloud_one_2=0x7f040004;
-        public static final int cloud_three=0x7f040005;
-        public static final int cloud_two=0x7f040006;
-        public static final int manage_btn=0x7f040007;
-        public static final int rainbowset=0x7f040008;
-        public static final int read_btn=0x7f040009;
-        public static final int resource_btn=0x7f04000a;
-        public static final int select_btn=0x7f04000b;
-        public static final int star=0x7f04000c;
+        public static final int alpha_in=0x7f040001;
+        public static final int cloud_five=0x7f040002;
+        public static final int cloud_five_2=0x7f040003;
+        public static final int cloud_four=0x7f040004;
+        public static final int cloud_four_2=0x7f040005;
+        public static final int cloud_one=0x7f040006;
+        public static final int cloud_one_2=0x7f040007;
+        public static final int cloud_three=0x7f040008;
+        public static final int cloud_three_2=0x7f040009;
+        public static final int cloud_two=0x7f04000a;
+        public static final int cloud_two_2=0x7f04000b;
+        public static final int left_out=0x7f04000c;
+        public static final int manage_btn=0x7f04000d;
+        public static final int rainbowset=0x7f04000e;
+        public static final int read_btn=0x7f04000f;
+        public static final int resource_btn=0x7f040010;
+        public static final int select_btn=0x7f040011;
+        public static final int star=0x7f040012;
     }
     public static final class attr {
     }
@@ -54,30 +60,34 @@ public final class R {
         public static final int star=0x7f02000e;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000c;
-        public static final int img_alounce_btn=0x7f09000b;
-        public static final int img_cloud_five=0x7f090006;
-        public static final int img_cloud_four=0x7f090005;
-        public static final int img_cloud_one=0x7f090002;
-        public static final int img_cloud_three=0x7f090004;
-        public static final int img_cloud_two=0x7f090003;
-        public static final int img_manage_btn=0x7f09000a;
-        public static final int img_rainbow=0x7f090000;
-        public static final int img_read_btn=0x7f090009;
-        public static final int img_resource_btn=0x7f090008;
-        public static final int img_select_btn=0x7f090007;
-        public static final int img_star=0x7f090001;
+        public static final int action_settings=0x7f0a000c;
+        public static final int img_alounce_btn=0x7f0a000b;
+        public static final int img_cloud_five=0x7f0a0006;
+        public static final int img_cloud_four=0x7f0a0005;
+        public static final int img_cloud_one=0x7f0a0002;
+        public static final int img_cloud_three=0x7f0a0004;
+        public static final int img_cloud_two=0x7f0a0003;
+        public static final int img_manage_btn=0x7f0a000a;
+        public static final int img_rainbow=0x7f0a0000;
+        public static final int img_read_btn=0x7f0a0009;
+        public static final int img_resource_btn=0x7f0a0008;
+        public static final int img_select_btn=0x7f0a0007;
+        public static final int img_star=0x7f0a0001;
+    }
+    public static final class integer {
+        public static final int welcome_anim_offset=0x7f060000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
+        public static final int welcomepage=0x7f030001;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060002;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060001;
+        public static final int action_settings=0x7f070002;
+        public static final int app_name=0x7f070000;
+        public static final int hello_world=0x7f070001;
     }
     public static final class style {
         /** 
@@ -101,10 +111,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f080000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f080001;
     }
 }

@@ -1,9 +1,15 @@
 package com.vip.syreadhd;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import com.vip.syreadhd.R.anim;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,13 +24,51 @@ public class MainActivity extends Activity {
 	ImageView img_rainbow,im_star,
 	img_cloud_one,img_cloud_two,img_cloud_three,img_cloud_four,img_cloud_five,
 	select_btn,read_btn,manage_btn,resource_btn,alounce_btn;
+	
+	Handler handler = new Handler() {
+		public void handleMessage(Message msg) {
+			super.handleMessage(msg);
+			switch (msg.what) {
+			 case 101:
+				 UIsetAnim2();
+				 break;
+				 default :
+					 break;
+			}
+		}
+	};
+	
+	Timer tt=new Timer();
+	TimerTask task = new TimerTask() {   
+		public void run() {   
+			 handler.sendEmptyMessage(101);
+		}   
+		}; 
+		
+		protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+			 switch (requestCode) {  
+	            case 1001:
+	            	if(resultCode==0)
+	            	{
+	            	
+	        		UIsetAnim();
+	        		 tt.schedule(task, 10000,5000);
+	            	}
+	            	break;
+	            	default:
+	            		break;
+		}
+		}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		UIidfind();
-		UIsetAnim();
+		
+		Intent intent= new Intent(MainActivity.this,WelcomePage.class);
+		this.startActivityForResult(intent, 1001);
+		
 		
 		alounce_btn.setOnClickListener(new OnClickListener() {
 			
@@ -79,6 +123,10 @@ public class MainActivity extends Activity {
 	private void UIsetAnim2()
 	{
 		img_cloud_one.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.cloud_one_2));
+		img_cloud_two.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.cloud_two_2));
+		img_cloud_three.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.cloud_three_2));
+		img_cloud_four.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.cloud_four_2));
+		img_cloud_five.startAnimation(AnimationUtils.loadAnimation(MainActivity.this, R.anim.cloud_five_2));
 	}
 	
 	
