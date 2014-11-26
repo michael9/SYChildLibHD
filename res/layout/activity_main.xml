@@ -85,6 +85,48 @@
         android:src="@drawable/cloud_five"
         />
          
+         
+                    <ImageView 
+                  android:id="@+id/img_read_btn_back"
+                     android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignLeft="@+id/img_read_btn"
+        android:layout_alignTop="@id/img_read_btn"
+        android:src="@drawable/btn_back"
+                  />
+                               <ImageView 
+                  android:id="@+id/img_select_btn_back"
+                     android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignLeft="@+id/img_select_btn"
+        android:layout_alignTop="@id/img_select_btn"
+        android:src="@drawable/btn_back"
+                  />
+                                          <ImageView 
+                  android:id="@+id/img_resource_btn_back"
+                     android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignLeft="@+id/img_resource_btn"
+        android:layout_alignTop="@id/img_resource_btn"
+        android:src="@drawable/btn_back"
+                  />
+                                          <ImageView 
+                  android:id="@+id/img_manage_btn_back"
+                     android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignLeft="@+id/img_manage_btn"
+        android:layout_alignTop="@id/img_manage_btn"
+        android:src="@drawable/btn_back"
+                  />
+                                                     <ImageView 
+                  android:id="@+id/img_alounce_btn_back"
+                     android:layout_width="50dp"
+        android:layout_height="50dp" 
+        android:layout_alignLeft="@+id/img_alounce_btn"
+        android:layout_alignTop="@id/img_alounce_btn"
+        android:src="@drawable/btn_back"
+                  />
+         
            <ImageView 
                 android:id="@+id/img_select_btn"
          android:layout_width="50dp"
@@ -124,5 +166,52 @@
         android:layout_alignRight="@id/img_cloud_five"
         android:layout_alignBottom="@id/img_cloud_five"
         android:src="@drawable/alounce"/>
+                   
+                   <TextView 
+                       android:id="@+id/txt_select_btn"
+             android:layout_below="@id/img_select_btn"
+               android:layout_alignStart="@id/img_select_btn"
+             android:layout_width="wrap_content"
+      	 android:layout_height="wrap_content" 
+      	 android:text="馆藏查询"
+             />
+                   
+                   
+         
+              <TextView 
+                  android:id="@+id/txt_read_btn"
+             android:layout_below="@id/img_read_btn"
+               android:layout_alignStart="@id/img_read_btn"
+             android:layout_width="wrap_content"
+      	 android:layout_height="wrap_content" 
+      	 android:text="推荐阅读"
+             />
+              
+                   <TextView 
+                       android:id="@+id/txt_resource_btn"
+             android:layout_below="@id/img_resource_btn"
+              android:layout_alignStart="@id/img_resource_btn"
+             android:layout_width="wrap_content"
+      	 android:layout_height="wrap_content" 
+      	 android:text="电子资源"
+             />
+                        <TextView 
+                            android:id="@+id/txt_manage_btn"
+             android:layout_below="@id/img_manage_btn"
+             android:layout_alignStart="@id/img_manage_btn"
+             android:layout_width="wrap_content"
+      	 android:layout_height="wrap_content" 
+      	 android:text="借阅管理"
+             />
+              <TextView 
+                  android:id="@+id/txt_alounce_btn"
+             android:layout_below="@id/img_alounce_btn"
+             android:layout_alignStart="@id/img_alounce_btn"
+             android:layout_width="wrap_content"
+      	 android:layout_height="wrap_content" 
+      	 android:text="管理公告"
+             />
+              
+              
    
 </RelativeLayout>

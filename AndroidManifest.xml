@@ -30,6 +30,34 @@
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
             android:screenOrientation="landscape"/>
         
+           <activity 
+            android:name=".ReadPage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="landscape"/>
+           
+           
+           <activity 
+            android:name=".SelectPage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="landscape"/>
+        
+           
+           <activity 
+            android:name=".ResourcePage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="landscape"/>
+           
+           
+           <activity 
+            android:name=".ManagePage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="landscape"/>
+           
+           
+           <activity 
+            android:name=".AlouncePage"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+            android:screenOrientation="landscape"/>
     </application>
 
 </manifest>
