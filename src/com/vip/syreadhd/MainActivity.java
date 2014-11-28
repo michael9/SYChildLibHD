@@ -75,7 +75,6 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		UIidfind();
-		UIsetCmd();
 
 		Intent intent = new Intent(MainActivity.this, WelcomePage.class);
 		this.startActivityForResult(intent, 1001);
@@ -150,8 +149,30 @@ public class MainActivity extends Activity {
 				MainActivity.this, R.anim.textshow));
 		img_select_btn_back.startAnimation(AnimationUtils.loadAnimation(
 				MainActivity.this, R.anim.textshow));
-		img_alounce_btn_back.startAnimation(AnimationUtils.loadAnimation(
-				MainActivity.this, R.anim.textshow));
+
+		Animation ma = AnimationUtils.loadAnimation(MainActivity.this,
+				R.anim.textshow);
+		ma.setAnimationListener(new AnimationListener() {
+
+			@Override
+			public void onAnimationStart(Animation animation) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onAnimationRepeat(Animation animation) {
+				// TODO Auto-generated method stub
+
+			}
+
+			@Override
+			public void onAnimationEnd(Animation animation) {
+				// TODO Auto-generated method stub
+				UIsetCmd();
+			}
+		});
+		img_alounce_btn_back.startAnimation(ma);
 	}
 
 	private void UIsetAnim2() {
