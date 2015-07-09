@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg">
+    
+
+    <LinearLayout
+        android:id="@+id/guide_btn01"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+       >
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/js"/>
+        <TextView
+            android:text="本馆介绍"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/guide_btn03"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/xz"/>
+        <TextView
+            android:text="借阅细则"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/guide_btn05"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/guide_btn01"
+         android:layout_marginLeft="77dp"
+         android:layout_marginTop="20dp"
+         android:layout_toRightOf="@+id/guide_btn02"
+         android:gravity="center"
+         android:orientation="vertical" >
+
+         <ImageView
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:src="@drawable/gl" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="开馆时间" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/guide_btn04"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/guide_btn02"
+         android:layout_toRightOf="@+id/guide_btn02"
+         android:gravity="center"
+         android:orientation="vertical" >
+
+         <ImageView
+             android:layout_width="110dp"
+             android:layout_height="110dp"
+             android:src="@drawable/fb" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="馆藏分布" />
+     </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/guide_btn02"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignTop="@+id/guide_btn05"
+         android:layout_marginLeft="57dp"
+         android:layout_marginTop="73dp"
+         android:layout_toRightOf="@+id/guide_btn01"
+         android:gravity="center"
+         android:orientation="vertical" >
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/gg" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="服务项目" />
+     </LinearLayout>
+
+</RelativeLayout>

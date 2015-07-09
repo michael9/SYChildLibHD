@@ -16,5 +16,80 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+      
+      <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+      <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+  <!-- 	   搜索结果字体 -->
+	<style name="TextContentSmallStyle">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+	<style name="TextTitleBlueStyle">
+        <item name="android:textColor">@color/serchitemtitle_txtcolor</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+	<style name="TextTitleBigBlueStyle">
+        <item name="android:textColor">@color/blue_title</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+	<style name="TextTitleSmallgBlueStyle">
+        <item name="android:textColor">@color/blue_title</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+	<style name="TextContentMiddleStyle">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+	<style name="TextContentBigStyle">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+	<style name="TextTitleMiddleBlueStyle">
+        <item name="android:textColor">@color/blue_title</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    
+	<style name="TextStyle_nullcontent">
+        <item name="android:textColor">@drawable/silvergray</item>
+        <item name="android:textSize">16.0sp</item>
+    </style>
+    <style name="Widget.GifView" parent="@android:style/Widget"></style>
+	
+	
+	 <style name="drop_down_list_header_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_header_progress_bar_height</item>
+    </style>
+
+    <style name="drop_down_list_footer_progress_bar_style">
+        <item name="android:minHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+        <item name="android:maxHeight">@dimen/drop_down_list_footer_progress_bar_height</item>
+    </style>
+
+    <style name="drop_down_list_header_font_style">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="drop_down_list_header_second_font_style">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="drop_down_list_footer_font_style">
+    </style>
+    
+     <style name="Loction_book_txt">
+        <item name="android:textSize">16sp</item>
+    </style>
 
 </resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/borrow_title"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:src="@drawable/gr"/>
+        <TextView 
+            android:id="@+id/borrow_readername"
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+            android:layout_margin="5dp"
+    android:text="姓名"/>
+        <Button 
+            android:id="@+id/borrow_logout"
+            android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+    android:text="退出登陆"
+    android:layout_weight="0"
+            android:background="@color/transparent" />
+    </LinearLayout>
+    
+ <ListView
+      android:layout_below="@+id/borrow_title"
+        android:id="@+id/borrow_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divider_color"
+        android:dividerHeight="1dp" >
+    </ListView>
+    
+   <RelativeLayout
+    android:id="@+id/noborrow_rl"
+     android:visibility="gone"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+         >
+     <ImageView   
+    android:id="@+id/noresult_img"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/defaut_book"
+   	android:visibility="gone"
+    />
+     <TextView 
+         android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/noresult_img"
+    android:gravity="center"
+    android:textColor="@android:color/darker_gray"
+    android:text="@string/no_borrow"
+         />
+     </RelativeLayout>
+</RelativeLayout>

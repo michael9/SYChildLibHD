@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.vip.syreadhd.MainActivity" >
+    tools:context="com.cqvip.moblib.sychildlibHD.MainActivity" >
 
     <ImageView
         android:layout_width="match_parent"
@@ -176,7 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@id/img_read_btn"
         android:layout_below="@id/img_read_btn"
-        android:text="推荐阅读" />
+        android:text="入馆指南" />
 
     <TextView
         android:id="@+id/txt_resource_btn"

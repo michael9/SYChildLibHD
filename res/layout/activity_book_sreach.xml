@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:dlistView="http://schemas.android.com/apk/res/com.cqvip.moblib.sychildlibHD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        layout="@layout/search_bar" />
+    
+     <com.cqvip.moblib.sychildlibHD.DropDownListView
+        android:id="@+id/search_res_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_total_esearch"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="@dimen/searchbar_horizontal_margin"
+        android:layout_marginRight="@dimen/searchbar_horizontal_margin"
+        android:background="@drawable/linearlayout_shape1"
+        android:divider="@drawable/xuxian"
+        dlistView:isAutoLoadOnBottom="true"
+        dlistView:isOnBottomStyle="true" />
+    
+ <!---->
+</LinearLayout>
